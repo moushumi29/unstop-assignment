@@ -1,38 +1,144 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: rgb(246, 251, 255);
+}
+.app-container{
+  display: flex;
+  gap: 20px;
+}
+.sidebar{
+  width: 10%;
+  height: 100vh;
+  background-color: white;
+  /* position: fixed;
+  left: 0px;
+  top: 0px; */
+  padding: 10px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box{
+  /* border: 1px solid black; */
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 15px 10px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(35, 104, 168);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.active{
+  border: 1px solid rgb(35, 104, 168);
+  border-radius: 7px;
+  background-color: rgb(233, 242, 250);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon{
+  font-size: 20px;
+}
+.dashed{
+  border-top: 1px dashed rgb(179, 199, 216);
+}
+.highlight{
+  margin-bottom: 10px;
+  padding: 0px;
+  color: red;
+  font-size: 12px;
+  border: 1px solid red;
+  border-radius: 11px;
+  background-color: rgb(250, 234, 237);
+}
+.assessment-page{
+  flex-grow: 1;
+  background-color: white;
+  border: none;
+  margin-top: 7px;
+  padding-right: 40px;
+  border-radius: 10px;
+}
+.top-bar{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+.text-wrapper{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.asses-text{
+  font-weight: 500;
+  font-size: 24px;
+  color: rgb(28, 85, 138);
+  padding: 15px 25px;
+  border-right: 2px solid lightgray;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.my-asses-text{
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(33, 112, 187);
+  margin: 0px 25px;
+  padding: 20px 0px;
+  border-bottom: 3px solid rgb(33, 112, 187);
+}
+.overview-container{
+  padding: 20px;
+  width: 1250px;
+}
+.heading{
+  color: rgb(28, 85, 138);
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.assessment-wrapper{
+  border: 1px solid lightgray;
+  border-radius: 7px;
+  display: flex;
+}
+.block{
+  border-right: 1px solid lightgray;
+  padding: 20px;
+}
+.title{
+  color: rgb(28, 85, 138);
+  font-weight: 500;
+  font-size: 16px;
+}
+.inner-block{
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.inner-wrap{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-right: 1px solid lightgray;
+  padding-right: 20px;
+}
+.icons-overview{
+  color: rgb(44, 28, 138);
+  background-color: rgb(243, 233, 250);
+  font-size: 22px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 7px;
+}
+.digit{
+  color: rgb(28, 85, 138);
+  font-weight: 700;
+  font-size: 20px;
+}
+.special-digit{
+  font-size: 13px;
+  color: rgb(80, 202, 80);
+}
+.inner-text{
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(28, 85, 138);
 }
