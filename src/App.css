@@ -142,3 +142,72 @@ body{
   font-weight: 600;
   color: rgb(28, 85, 138);
 }
+.assessment-box{
+  display: flex;
+  gap: 30px;
+}
+.box-container{
+  width: 380px;
+  height: 200px;
+  border: 1px dashed rgb(179, 199, 216);
+  background-color: rgb(244, 246, 248);
+  border-radius: 10px;
+}
+.math-container{
+  width: 340px;
+  height: 160px;
+  border: 1px solid rgb(179, 199, 216);
+  padding: 20px;
+  border-radius: 10px;
+}
+.box-wrapper{
+  text-align: center;
+}
+.add-icon{
+  font-size: 40px;
+  color: rgb(33, 112, 187);
+  padding: 15px;
+  margin-top: 30px;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+}
+.text{
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0px 10px;
+  color: rgb(28, 85, 138);
+}
+.icon-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.job-text{
+  color: rgb(28, 85, 138);
+  font-weight: 600;
+  padding-right: 10px;
+  border-right: 2px solid rgb(179, 199, 216);
+}
+.info-wrapper{
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+.zero-text{
+  color: rgb(28, 85, 138);
+  font-weight: 600;
+}
+.text-btn{
+  border: 1px solid rgb(28, 85, 138);
+  border-radius: 15px;
+  height: 28px;
+  padding: 0px 10px;
+  color: rgb(28, 85, 138);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+  margin-left: 60px;
+}

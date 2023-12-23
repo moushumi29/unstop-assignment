@@ -1,6 +1,7 @@
 import React from 'react'
 import { BiMobile } from "react-icons/bi";
 import Overview from './Overview';
+import MyAssessmentPage from './MyAssessmentPage';
 
 const AssessmentPage = () => {
   return (
@@ -15,6 +16,7 @@ const AssessmentPage = () => {
         </div>
       </div>
       <Overview/>
+      <MyAssessmentPage/>
     </div>
   )
 }
