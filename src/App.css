@@ -13,11 +13,20 @@ body{
   width: 10%;
   height: 100vh;
   background-color: white;
-  /* position: fixed;
-  left: 0px;
-  top: 0px; */
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 7;
   padding: 10px;
   text-align: center;
+}
+.sidebar::before{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.2;
 }
 .box{
   /* border: 1px solid black; */
@@ -152,6 +161,10 @@ body{
   border: 1px dashed rgb(179, 199, 216);
   background-color: rgb(244, 246, 248);
   border-radius: 10px;
+  cursor: pointer;
+}
+.box-container:hover{
+  background-color: rgb(179, 199, 216);
 }
 .math-container{
   width: 340px;
@@ -210,4 +223,54 @@ body{
   gap: 5px;
   margin-top: 10px;
   margin-left: 60px;
+}
+.dialog-wrapper{
+  padding: 25px;
+  height: 1280px;
+  width: 480px;
+  color: rgb(28, 85, 138);
+  font-weight: 600;
+  cursor: pointer;
+}
+.heading-wrapper{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+.input-div{
+  margin-top: 20px;
+}
+.input-div label{
+  display: block;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.input-div input, select{
+  width: 95%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.input-div select{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.input-div input::placeholder{
+  color: rgb(28, 85, 138);
+  font-weight: 600;
+}
+.skill{
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill div{
+  background-color: rgb(179, 199, 216);
+  border: none;
+  border-radius: 12px;
+  padding: 5px 10px;
+  margin: 8px 6px;
+  font-size: 13px;
 }
